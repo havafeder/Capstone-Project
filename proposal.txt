@@ -1,0 +1,49 @@
+Project Proposal
+
+1. What goal will your website be designed to achieve?
+
+	Users will be able to retrieve the Old Testament and New Testament verses, chapters, and books.
+
+2. What kind of users will visit your site? In other words, what is the demographic of
+your users?
+
+	Christians and people that want to learn more about what the Bible says but maybe don't own a physical copy.
+	Unfortunately this API only supports the "Bible in Basic English" version, so the user will have to
+	understand english.
+
+3. What data do you plan on using? 
+
+	I am planning on using the Holy Bible API from the 'rapidapi' website.
+	Data includes books, verses, chapters, and getting verses by the chapters.
+
+4. In brief, outline your approach to creating your project.
+
+	a. What does your database schema look like?
+		My schema has 
+		-a section for the new testament and the old testament which contains
+		the books for each. 
+		-a section to get chapters which contains the book, the chapter,
+		and the output for that chapter.
+		-a section to get verses which contains the book, the chapter,
+		the versefrom, the verseto, and the output of those verses.
+
+	b. What kinds of issues might you run into with your API?
+		I am not sure. I am just predicting lots of bugs. 
+
+	c. Is there any sensitive information you need to secure?
+		No, I don't see the advantage of requiring
+		the client to create an account thus requiring the
+		encryption of a password.
+
+	d. What functionality will your app include?
+		App will be able to retrieve data from the whole Bible, though
+		restricted by the version it uses. 
+
+	e. What will the user flow look like?
+		The user will be able to search for a list of all the books in the new and old testament, 
+		will be able to search for a list of all the chapters in each book, and will be able to 
+		search for specific verses.
+
+	f. What features make your site more than CRUD? Do you have any stretch
+	goals?
+		I do not, should I?
