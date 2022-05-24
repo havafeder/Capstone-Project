@@ -2,33 +2,24 @@ Project Proposal
 
 1. What goal will your website be designed to achieve?
 
-	Users will be able to retrieve the Old Testament and New Testament verses, chapters, and books.
+	Users will be able to search for song lyrics by various artists.
 
 2. What kind of users will visit your site? In other words, what is the demographic of
 your users?
 
-	Christians and people that want to learn more about what the Bible says but maybe don't own a physical copy.
-	Unfortunately this API only supports the "Bible in Basic English" version, so the user will have to
-	understand english.
+	Music lovers and people who are interested in knowing or referencing the exact lyrics for any given song.
 
 3. What data do you plan on using? 
 
-	I am planning on using the Holy Bible API from the 'rapidapi' website.
-	Data includes books, verses, chapters, and getting verses by the chapters.
+	I am planning on using the Genius API via the rapidapi website.
 
 4. In brief, outline your approach to creating your project.
 
 	a. What does your database schema look like?
-		My schema has 
-		-a section for the new testament and the old testament which contains
-		the books for each. 
-		-a section to get chapters which contains the book, the chapter,
-		and the output for that chapter.
-		-a section to get verses which contains the book, the chapter,
-		the versefrom, the verseto, and the output of those verses.
+		My schema has a section for all the artists, a section for all the songs, and a section for all the songs by any given artist.
 
 	b. What kinds of issues might you run into with your API?
-		I am not sure. I am just predicting lots of bugs. 
+		I am not sure. 
 
 	c. Is there any sensitive information you need to secure?
 		No, I don't see the advantage of requiring
@@ -36,14 +27,11 @@ your users?
 		encryption of a password.
 
 	d. What functionality will your app include?
-		App will be able to retrieve data from the whole Bible, though
-		restricted by the version it uses. 
+		App will be able to search for artists and songs and retreive the lyrics for each song searched. App will also be able to retrieve a list of songs from various artists.
 
 	e. What will the user flow look like?
-		The user will be able to search for a list of all the books in the new and old testament, 
-		will be able to search for a list of all the chapters in each book, and will be able to 
-		search for specific verses.
+		The user will be able to either search for an artist or a song. If user searches for artist first they will be able to choose a song by that artist and see the song's lyrics. If a user searches directly for a song they will be met with the lyrics for that song.
 
 	f. What features make your site more than CRUD? Do you have any stretch
 	goals?
-		I do not, should I?
+		I do not.
