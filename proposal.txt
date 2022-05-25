@@ -2,12 +2,12 @@ Project Proposal
 
 1. What goal will your website be designed to achieve?
 
-	Users will be able to search for song lyrics by various artists.
+	Users will be able to search for song lyrics by various artists and save their favorite songs and artists to their profile. 
 
 2. What kind of users will visit your site? In other words, what is the demographic of
 your users?
 
-	Music lovers and people who are interested in knowing or referencing the exact lyrics for any given song.
+	People who are interested in knowing or referencing the exact lyrics for any given song.
 
 3. What data do you plan on using? 
 
@@ -16,22 +16,20 @@ your users?
 4. In brief, outline your approach to creating your project.
 
 	a. What does your database schema look like?
-		My schema has a section for all the artists, a section for all the songs, and a section for all the songs by any given artist.
+		My schema has a section for the users, a section for the songs and the artists, a section for the user's saved artists and a section for the user's saved songs. 
 
 	b. What kinds of issues might you run into with your API?
-		I am not sure. 
+		Issues with the search feature.  
 
 	c. Is there any sensitive information you need to secure?
-		No, I don't see the advantage of requiring
-		the client to create an account thus requiring the
-		encryption of a password.
+		Yes, I will need to secure the passwords for each user. 
 
 	d. What functionality will your app include?
-		App will be able to search for artists and songs and retreive the lyrics for each song searched. App will also be able to retrieve a list of songs from various artists.
+		App will be able to search for artists and songs and retreive the lyrics for each song searched. App will be able to retrieve a list of songs from various artists. Users will be able to save artists and songs to their profile for easy referencing. 
 
 	e. What will the user flow look like?
-		The user will be able to either search for an artist or a song. If user searches for artist first they will be able to choose a song by that artist and see the song's lyrics. If a user searches directly for a song they will be met with the lyrics for that song.
+		The user will be able to either search for an artist or a song. If user searches for artist first they will be able to choose a song by that artist and see the song's lyrics. If a user searches directly for a song they will be met with the lyrics for that song. User will be able to save an artist or a song to their profile so they can easily come back to it in the future. 
 
 	f. What features make your site more than CRUD? Do you have any stretch
 	goals?
-		I do not.
+		THe site will include user authentication. 
