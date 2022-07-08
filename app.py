@@ -100,12 +100,6 @@ def search_lyrics():
         )
         db.session.add(song)
         db.session.commit()
-        # like = Likes(
-        #     user_id=g.user.id,
-        #     song_id=song.id
-        # )
-        # db.session.add(like)
-        # db.session.commit()
         return render_template("results.html", data=data, url=url, 
         artist=artist, lyrics=lyrics, song=song, song_name=song_name)
     
