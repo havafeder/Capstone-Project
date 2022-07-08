@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="home-aside">
+<h2>{{ g.user.username }}'s favorites</h2>
+</div>
+
+<ul>
+{% for song in songs %}
+<a href="/likes/{{ song.id }}"><h2>{{ song.title.lower() }} - {{ song.artist.lower() }}</h2>
+{% endfor %}
+</ul>
+
+
+
+{% endblock %}

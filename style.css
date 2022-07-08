@@ -1,0 +1,175 @@
+/* ====================== General */
+
+body {
+	background-color: #dddddd;
+	font-family: 'Mingzat', sans-serif;
+}
+
+body.error-404 {
+	background-color: #1da1f2;
+}
+
+.btn {
+	border-radius: 40px;
+	border: none;
+	margin: 5px;
+	color: black;
+	background-color: white;
+}
+
+.btn:hover {
+	cursor: pointer;
+	color: white;
+	background-color: #66757f;
+}
+
+a {
+	color: #325288;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #19282f;
+}
+
+.home-aside {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	padding: 20px;
+	font-family: 'Mingzat', sans-serif;
+}
+
+.link-faves {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	font-family: 'Mingzat', sans-serif;
+}
+
+.song-info {
+	font-family: 'Mingzat', sans-serif;
+}
+/* ======================= Nav */
+
+.navbar {
+	background-color: #dddddd;
+	height: 46px;
+	margin-bottom: 1rem;
+	position: relative;
+	z-index: 9999;
+	padding: 5px;
+}
+
+.navbar a {
+	color: #413f42;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: 'Mingzat', sans-serif;
+}
+
+.navbar a:hover {
+	color: #eb1d36;
+}
+
+#search.form-control {
+	border-radius: 20px;
+	margin-bottom: 0;
+	width: 100%;
+	font-size: 13px;
+	padding-right: 28px;
+	box-sizing: border-box;
+}
+
+#search.form-control + .btn {
+	position: absolute;
+	right: 9px;
+	top: 2px;
+	bottom: 4px;
+	z-index: 1;
+	padding: 0;
+	color: #66757f;
+}
+
+.onboarding > .navbar form.navbar-form {
+	display: none;
+}
+
+.onboarding {
+	background-color: #fff;
+}
+
+nav + .container {
+	margin-bottom: 1rem;
+}
+
+/* ============================ Signed out home */
+
+.home-hero {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	left: 0;
+	z-index: -1;
+	color: black;
+	background-color: #dddddd;
+	text-align: center;
+	padding: 1rem;
+}
+
+.home-hero .btn {
+	text-shadow: none;
+	position: relative;
+	z-index: 1;
+	width: 150px;
+}
+
+.home-hero h1 {
+	margin-bottom: 4rem;
+}
+
+/* ========================== Signup/Login */
+
+#user_form input.form-control {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px;
+}
+
+/* =========================== Edit Page */
+/* 
+.edit-btn-area {
+	display: flex;
+	justify-content: space-between;
+}
+
+.edit-btn-area > .btn {
+	width: 48%;
+} */
+
+/* ================================ 404 page */
+
+.message-404 {
+	color: white;
+	margin-top: 2em;
+	text-align: center;
+}
+
+.message-404 a {
+	color: white;
+}
+
+.message-404 > h4.display-4 {
+	font-size: 2.5em;
+}
+
+.message-404 .form-inline input {
+	flex: 1;
+}

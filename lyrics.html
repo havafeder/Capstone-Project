@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<input id="title"> by <input id="artist">
+	<button onclick="findlyrics()">Find Lyrics</button>
+
+<div id="output"></div>
+<script>
+	function findlyrics(){
+		$.get("https://api.lyrics.ovh"+document.getElementById("artist").value+"/"+
+		document.getElementById("title").value, 
+		function(data){
+			document.getElementById("output").innerHTML=
+			data.lyrics.replace(new RegEXP("\n", "g"), "<br>")
+		})
+	}
+</script>
+
+{% endblock %}

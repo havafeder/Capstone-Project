@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="col-sm-6">
+	
+		<h1>{{ artist }} - {{ song_name }}</h1>
+		
+		<a href="/search/save/{{song.id}}">save song</a>
+		<pre>
+		{{ lyrics }}
+		</pre>
+		
+</div>
+{% endblock %}
