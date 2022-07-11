@@ -74,6 +74,14 @@ a:hover {
 	color: #eb1d36;
 }
 
+.delete {
+	color: #eb1d36;
+}
+
+.delete:hover {
+	color: darkred;
+}
+
 #search.form-control {
 	border-radius: 20px;
 	margin-bottom: 0;
