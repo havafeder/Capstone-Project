@@ -25,14 +25,6 @@ app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
 connect_db(app)
 
-# genius = lyricsgenius.Genius('2c8DFT-d-NxgF0yAM14oQYu44LlpWvM1TZ9sLpl_kAH24DUQVSAbcVn_ZKJMw2lJ',
-# skip_non_songs = True, excluded_terms=["(Remix)", "(Live)"], remove_section_headers=True)
-
-# url = 'https://api.lyrics.ovh/v1/maroon5/sugar'
-# response = requests.get(url)
-# data = json.loads(response.text)
-# db.create_all()
-
 @app.before_request
 def add_user_to_g():
     """If we're logged in, add curr user to Flask global."""
@@ -162,6 +154,21 @@ def show_lyrics(song_id):
 
     return render_template("show_song.html", song=song)
 
+#Deleting songs from likes:
+
+@app.route('/likes/delete/<int:song_id>', methods=['GET', 'POST'])
+def delete_like(song_id):
+    """Delete like from user's profile."""
+
+    if not g.user:
+        flash("Access unauthorized.", "danger")
+        return redirect("/")
+
+    liked_song = db.session.query(Likes).filter(Likes.id == song_id).first()
+    db.session.delete(liked_song)
+    db.session.commit()
+
+    return render_template('likes.html')
 
 # signing up:
 
