@@ -124,17 +124,6 @@ pre {
 	color: #66757f;
 }
 
-.onboarding > .navbar form.navbar-form {
-	display: none;
-}
-
-.onboarding {
-	background-color: #fff;
-}
-
-nav + .container {
-	margin-bottom: 1rem;
-}
 
 /* ============================ Signed out home */
 
@@ -173,17 +162,6 @@ nav + .container {
 	font-weight: bold;
 	padding: 12px;
 }
-
-/* =========================== Edit Page */
-/* 
-.edit-btn-area {
-	display: flex;
-	justify-content: space-between;
-}
-
-.edit-btn-area > .btn {
-	width: 48%;
-} */
 
 /* ================================ 404 page */
 
