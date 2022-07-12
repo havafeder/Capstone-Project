@@ -77,21 +77,26 @@ def search_lyrics():
     form = SearchForm()
 
     if form.validate_on_submit():
-        artist = form.artist.data
-        song_name = form.song.data
-        url = f'https://api.lyrics.ovh/v1/{artist}/{song_name}'
-        response = requests.get(url)
-        data = json.loads(response.text)
-        lyrics = data['lyrics']
-        user_id = g.user.id
-        song = Song(
-            user_id=user_id,
-            title=song_name,
-            artist=artist,
-            lyrics=lyrics
-        )
-        db.session.add(song)
-        db.session.commit()
+        try:
+            artist = form.artist.data
+            song_name = form.song.data
+            url = f'https://api.lyrics.ovh/v1/{artist}/{song_name}'
+            response = requests.get(url)
+            data = json.loads(response.text)
+            lyrics = data['lyrics']
+            user_id = g.user.id
+            song = Song(
+                user_id=user_id,
+                title=song_name,
+                artist=artist,
+                lyrics=lyrics
+            )
+            db.session.add(song)
+            db.session.commit()
+        except:
+            flash("please try again or enter a different song")
+            return redirect('/search')
+        
         return render_template("results.html", data=data, url=url, 
         artist=artist, lyrics=lyrics, song=song, song_name=song_name)
     
