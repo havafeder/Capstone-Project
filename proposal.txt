@@ -2,7 +2,7 @@ Project Proposal
 
 1. What goal will your website be designed to achieve?
 
-	Users will be able to search for song lyrics by various artists and save their favorite songs and artists to their profile. 
+	Users will be able to search for song lyrics by various artists and save their favorite songs to their profile. 
 
 2. What kind of users will visit your site? In other words, what is the demographic of
 your users?
@@ -16,8 +16,8 @@ your users?
 4. In brief, outline your approach to creating your project.
 
 	a. What does your database schema look like?
-		My schema has a section for the users, a section for the songs and the artists, a section for the user's saved artists and a section for the user's saved songs. 
-
+		My schema has a section for the users, a section for the songs, a section for the user's saved songs.
+		
 	b. What kinds of issues might you run into with your API?
 		Issues with the search feature.  
 
@@ -25,10 +25,10 @@ your users?
 		Yes, I will need to secure the passwords for each user. 
 
 	d. What functionality will your app include?
-		App will be able to search for artists and songs and retreive the lyrics for each song searched. App will be able to retrieve a list of songs from various artists. Users will be able to save artists and songs to their profile for easy referencing. 
+		App will be able to search for ongs and retreive the lyrics for each song searched. Users will be able to save songs to their profile for easy referencing. 
 
 	e. What will the user flow look like?
-		The user will be able to either search for an artist or a song. If user searches for artist first they will be able to choose a song by that artist and see the song's lyrics. If a user searches directly for a song they will be met with the lyrics for that song. User will be able to save an artist or a song to their profile so they can easily come back to it in the future. 
+		The user will be able to search for a song. Once user searches for song they will be met with the lyrics for that song. User will be able to save any song to their profile so they can easily come back to it in the future. 
 
 	f. What features make your site more than CRUD? Do you have any stretch
 	goals?
