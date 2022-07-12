@@ -94,7 +94,7 @@ def search_lyrics():
             db.session.add(song)
             db.session.commit()
         except:
-            flash("please try again or enter a different song")
+            flash("please try again or enter a different song", "danger")
             return redirect('/search')
         
         return render_template("results.html", data=data, url=url, 
