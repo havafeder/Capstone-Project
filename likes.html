@@ -7,7 +7,7 @@
 
 <ul>
 {% for song in songs %}
-<a href="/likes/{{ song.id }}"><h2>{{ song.title.lower() }} - {{ song.artist.lower() }}</h2>
+<a href="/likes/{{ song.id }}"><h2>{{ song.title.lower() }} - {{ song.artist.lower() }} <a class="delete" href="/likes/delete/{{ song.id }}">x</a></h2>
 {% endfor %}
 </ul>
 
