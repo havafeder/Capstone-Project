@@ -168,7 +168,7 @@ def delete_like(song_id):
     db.session.delete(liked_song)
     db.session.commit()
 
-    return render_template('likes.html')
+    return redirect('/likes')
 
 # signing up:
 
