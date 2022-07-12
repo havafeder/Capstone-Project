@@ -1,1 +1,23 @@
+User
+-
+ID PK int
+username text
+email text
+password text
 
+Song
+-
+ID PK int
+UserID int FK >- User.ID
+title text
+artist text
+lyrics text
+
+Likes 
+----
+ID PK int
+UserID int FK >- User.ID
+SongID int FK >- Song.ID
+title text
+artist text
+lyrics text
