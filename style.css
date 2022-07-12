@@ -51,7 +51,24 @@ a:hover {
 
 .song-info {
 	font-family: 'Mingzat', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
+.save {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+pre {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 30px;
+}
+
 /* ======================= Nav */
 
 .navbar {
