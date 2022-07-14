@@ -178,31 +178,31 @@ def delete_like(song_id):
 # Edit user profile:
 
 
-@app.route('/edit', methods=["GET", "POST"])
-def edit():
-    """Update profile for current user."""
+# @app.route('/edit', methods=["GET", "POST"])
+# def edit():
+#     """Update profile for current user."""
 
-    if not g.user:
-        flash("Access unauthorized.", "danger")
-        return redirect("/")
+#     if not g.user:
+#         flash("Access unauthorized.", "danger")
+#         return redirect("/")
 
-    user = g.user
-    form = UserEditForm(obj=user)
+#     user = g.user
+#     form = UserEditForm(obj=user)
 
-    if form.validate_on_submit():
+#     if form.validate_on_submit():
 
-        if User.authenticate(user.username, form.password.data):
-            updated_user = db.session.query(User).filter(User.id == user.id).first()
-            updated_user.username = form.username.data
-            updated_user.email = form.email.data
+#         if User.authenticate(user.username, form.password.data):
+#             updated_user = db.session.query(User).filter(User.id == user.id).first()
+#             updated_user.username = form.username.data
+#             updated_user.email = form.email.data
 
-            db.session.commit()
-            return render_template('home.html', updated_user=updated_user)
+#             db.session.commit()
+#             return render_template('home.html', updated_user=updated_user)
        
-        flash("wrong password, please try again.", 'danger')
+#         flash("wrong password, please try again.", 'danger')
 
 
-    return render_template('edit.html', form=form, user=user)
+#     return render_template('edit.html', form=form, user=user)
 
 # signing up:
 
